@@ -44,10 +44,21 @@ public class Main {
         );
 
 //        Z3
-        Student s1 = new Student("Sara", "Babic", "80030130193", "Adresa1", "1977-03-03", "0303977385019",predmeti);
-        Student s2 = new Student("Josip", "Kovačević", "42548556539", "Adresa1", "2005-05-01", "0105005302095",predmeti);
-        Student s3 = new Student("ime1", "prezime1", "68691469811", "Adresa1", "11/11/2011", "0303977385019",predmeti);
-        Student s4 = new Student("ime1", "prezime1", "68691469811", "Adresa1", "11/11/2011", "0303977385019",predmeti);
-        Student s5 = new Student("ime1", "prezime1", "68691469811", "Adresa1", "11/11/2011", "0303977385019",predmeti);
+        List<Student> studenti = Arrays.asList(
+        new Student("Sara", "Babic", "80030130193", "Adresa1", "1977-03-03", "0303977385019",predmeti),
+        new Student("Josip", "Kovačević", "42548556539", "Adresa1", "2005-05-01", "0105005302095",predmeti),
+        new Student("ime1", "prezime1", "68691469811", "Adresa1", "11/11/2011", "0303977385019",predmeti),
+        new Student("ime1", "prezime1", "68691469811", "Adresa1", "11/11/2011", "0303977385019",predmeti),
+        new Student("ime1", "prezime1", "68691469811", "Adresa1", "11/11/2011", "0303977385019",predmeti));
+
+        for(Student student : studenti) {
+            System.out.println("Ime studenta: " + student.ime);
+            System.out.println("Prezime : " + student.prezime);
+            System.out.println("OIB: " + student.oib);
+            System.out.println("Adresa: " + student.adresa);
+            System.out.println("Datum rodenja: " + student.dob);
+            System.out.println("JMBAG: " + student.jmbag);
+            System.out.println("ECTS total: " + student.sumaECTS());
+        }
     }
 }

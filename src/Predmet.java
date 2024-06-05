@@ -8,7 +8,5 @@ public class Predmet {
     public String ime;
     public int ECTS;
 
-    public void sumaECTS(){
 
-    }
 }

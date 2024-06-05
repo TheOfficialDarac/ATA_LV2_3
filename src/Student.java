@@ -12,4 +12,12 @@ public class Student extends Osoba {
         this.jmbag = jmbag;
         this.listaPredmeta = listaPredmeta;
     }
+
+    public int sumaECTS(){
+        int bodovi = 0;
+        for (Predmet predmet : listaPredmeta) {
+            bodovi += predmet.ECTS;
+        }
+        return bodovi;
+    }
 }
