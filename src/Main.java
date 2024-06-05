@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -30,5 +34,20 @@ public class Main {
 
         System.out.println("Provjera stringa " + o2.ProvjeraString(" 12 "));
         o2.Ispis();
+
+        List<Predmet> predmeti = Arrays.asList(
+                new Predmet("Osnove Programiranja", 9),
+                new Predmet("Objektno Orijentirano Programiranje", 9),
+                new Predmet("Osnove Web Programiranja", 9),
+                new Predmet("Skriptni Programski jezici", 9),
+                new Predmet("Web Programirajne na strani posluzitelja", 9)
+        );
+
+//        Z3
+        Student s1 = new Student("Sara", "Babic", "80030130193", "Adresa1", "1977-03-03", "0303977385019",predmeti);
+        Student s2 = new Student("Josip", "Kovačević", "42548556539", "Adresa1", "2005-05-01", "0105005302095",predmeti);
+        Student s3 = new Student("ime1", "prezime1", "68691469811", "Adresa1", "11/11/2011", "0303977385019",predmeti);
+        Student s4 = new Student("ime1", "prezime1", "68691469811", "Adresa1", "11/11/2011", "0303977385019",predmeti);
+        Student s5 = new Student("ime1", "prezime1", "68691469811", "Adresa1", "11/11/2011", "0303977385019",predmeti);
     }
 }
